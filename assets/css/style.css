@@ -1,0 +1,644 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body{
+    background:#f8f9fa;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+
+    background:
+    linear-gradient(
+    rgba(220,53,69,.9),
+    rgba(220,53,69,.9)
+    ),
+    url('../images/blood-bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    padding:80px 0;
+
+}
+
+
+.hero h1{
+
+    font-size:3rem;
+    font-weight:bold;
+
+}
+
+
+.hero p{
+
+    font-size:1.2rem;
+    margin-top:15px;
+
+}
+
+
+
+.hero-image-box{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+
+.hero-img{
+
+    width:100%;
+    max-width:450px;
+    height:400px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.25);
+
+    transition:.4s;
+
+}
+
+
+
+.hero-img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* =========================
+   CARDS
+========================= */
+
+
+.card{
+
+    border:none;
+    border-radius:15px;
+
+    transition:.3s;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.1);
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,.15);
+
+}
+
+
+
+/* Role Cards */
+
+.role-card{
+
+    border:none;
+
+}
+
+
+
+.role-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+
+.btn-danger{
+
+    border-radius:30px;
+    padding:10px 25px;
+    font-weight:600;
+
+}
+
+
+
+.btn-danger:hover{
+
+    background:#bb2d3b;
+
+}
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+
+.navbar-brand{
+
+    font-size:1.5rem;
+
+}
+
+
+.nav-link{
+
+    font-weight:500;
+    transition:.3s;
+
+}
+
+
+
+.nav-link:hover{
+
+    color:#ffd6d6!important;
+
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer{
+
+    margin-top:80px;
+
+    background:#212529;
+
+    color:white;
+
+    padding:25px 0;
+
+    text-align:center;
+
+}
+
+
+
+/* =========================
+   ADMIN PANEL
+========================= */
+
+
+.admin-layout{
+
+    display:flex;
+
+}
+
+
+
+.admin-sidebar{
+
+    width:260px;
+
+    min-height:100vh;
+
+    background:#111827;
+
+}
+
+
+
+.admin-logo{
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+
+
+.admin-menu{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+
+.admin-menu li a{
+
+    display:block;
+
+    color:#ddd;
+
+    padding:15px 25px;
+
+    text-decoration:none;
+
+}
+
+
+
+.admin-menu li a i{
+
+    width:30px;
+
+    color:#dc3545;
+
+}
+
+
+
+.admin-menu li a:hover{
+
+    background:#dc3545;
+
+    color:white;
+
+}
+
+
+
+.admin-menu li a:hover i{
+
+    color:white;
+
+}
+
+
+
+.logout{
+
+    margin-top:30px;
+
+}
+
+
+
+.admin-content{
+
+    flex:1;
+
+    padding:30px;
+
+    background:#f8f9fa;
+
+}
+
+
+
+.admin-card{
+
+    padding:30px;
+
+    color:white;
+
+    border-radius:15px;
+
+    text-align:center;
+
+}
+
+
+
+.admin-card h1{
+
+    font-size:45px;
+
+}
+
+
+
+.admin-box{
+
+    display:block;
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    box-shadow:0 5px 15px #ddd;
+
+    transition:.3s;
+
+}
+
+
+
+.admin-box:hover{
+
+    background:#dc3545;
+
+    color:white;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+/* =========================
+   TABLE RESPONSIVE
+========================= */
+
+
+.table-responsive{
+
+    overflow-x:auto;
+
+}
+
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+
+@media(max-width:768px){
+
+
+    .hero{
+
+        padding:50px 15px;
+
+    }
+
+
+    .hero h1{
+
+        font-size:2rem;
+
+    }
+
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+
+
+    .hero-img{
+
+        height:280px;
+
+        max-width:350px;
+
+    }
+
+
+
+    /* Admin */
+
+    .admin-layout{
+
+        display:block;
+
+    }
+
+
+
+    .admin-sidebar{
+
+        width:100%;
+
+        min-height:auto;
+
+    }
+
+
+
+    .admin-logo{
+
+        padding:15px;
+
+    }
+
+
+
+    .admin-content{
+
+        padding:15px;
+
+    }
+
+
+
+    .admin-card{
+
+        padding:20px;
+
+    }
+
+
+
+    .admin-card h1{
+
+        font-size:35px;
+
+    }
+
+
+
+    .admin-box{
+
+        padding:20px;
+
+        font-size:17px;
+
+    }
+
+
+
+    .d-flex.justify-content-between.align-items-center{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        text-align:center;
+
+    }
+
+
+
+    table{
+
+        white-space:nowrap;
+
+    }
+
+
+
+}
+
+
+
+@media(max-width:480px){
+
+
+    .navbar-brand{
+
+        font-size:1.1rem;
+
+    }
+
+
+    h2{
+
+        font-size:22px;
+
+    }
+
+
+    .btn{
+
+        font-size:14px;
+
+    }
+
+
+    .hero-img{
+
+        height:220px;
+
+    }
+
+
+}
+
+/* ===== Admin Sidebar ===== */
+
+/* .admin-sidebar{
+    width:260px;
+    min-height:100vh;
+    background:#212529;
+    position:fixed;
+    left:0;
+    top:0;
+    overflow-y:auto;
+}
+
+.admin-logo{
+    padding:25px;
+    text-align:center;
+    color:#fff;
+    font-size:22px;
+    font-weight:bold;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.admin-logo small{
+    color:#ccc;
+    font-size:14px;
+    font-weight:400;
+}
+
+.admin-menu{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.admin-menu li{
+    margin:0;
+}
+
+.admin-menu li a{
+    display:block;
+    padding:15px 20px;
+    color:#ddd;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.admin-menu li a i{
+    width:25px;
+    color:#dc3545;
+}
+
+.admin-menu li a:hover,
+.admin-menu li a.active{
+    background:#dc3545;
+    color:#fff;
+}
+
+.admin-menu li a:hover i,
+.admin-menu li a.active i{
+    color:#fff;
+}
+
+.logout{
+    border-top:1px solid rgba(255,255,255,.1);
+    margin-top:20px;
+}
+
+.admin-content{
+    margin-left:260px;
+    padding:30px;
+    min-height:100vh;
+    background:#f8f9fa;
+}
+
+@media (max-width:768px){
+
+    .admin-sidebar{
+        position:relative;
+        width:100%;
+        min-height:auto;
+    }
+
+    .admin-content{
+        margin-left:0;
+        padding:20px;
+    }
+
+} */

@@ -1,0 +1,67 @@
+
+{
+    "name": "Blood Donor Network",
+    "short_name": "Blood Donor",
+    "description": "Blood Donor Network connects blood donors and recipients during emergencies.",
+    
+    "start_url": "/BloodDonorNetwork/",
+    "scope": "/BloodDonorNetwork/",
+    
+    "display": "standalone",
+    "display_override": [
+        "window-controls-overlay",
+        "standalone"
+    ],
+
+    "orientation": "portrait-primary",
+
+    "background_color": "#ffffff",
+    "theme_color": "#dc3545",
+
+    "lang": "en-IN",
+    "dir": "ltr",
+
+    "icons": [
+        {
+            "src": "/BloodDonorNetwork/assets/images/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/BloodDonorNetwork/assets/images/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/BloodDonorNetwork/assets/images/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+
+    "screenshots": [
+        {
+            "src": "/BloodDonorNetwork/assets/images/pwa-desktop.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Blood Donor Network desktop interface"
+        },
+        {
+            "src": "/BloodDonorNetwork/assets/images/pwa-mobile.png",
+            "sizes": "390x844",
+            "type": "image/png",
+            "label": "Blood Donor Network mobile interface"
+        }
+    ],
+
+    "categories": [
+        "medical",
+        "health",
+        "lifestyle"
+    ]
+}
+
